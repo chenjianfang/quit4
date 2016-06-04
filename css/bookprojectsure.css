@@ -1,0 +1,269 @@
+@charset "UTF-8";
+.clearfloat {
+  content: '';
+  display: table;
+  clear: both; }
+
+/*预约信息*/
+.bookProjectSure {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 10rem;
+  background-color: #efeff4;
+  z-index: 9; }
+
+.bookProjectSure .booksure-inner {
+  background-color: #efeff4;
+  padding-bottom: 2.34375rem; }
+
+.bookProjectSure .booksure-inner .booksure-detail-out {
+  padding: 0 0.3125rem;
+  background-color: #fff; }
+
+.bookProjectSure .booksure-inner .booksure-detail {
+  width: 100%; }
+
+/* 预约时间 */
+.bookProjectSure .booksure-inner .booksure-detail .bookTime {
+  width: 100%;
+  border-bottom: 2px solid #eaeaea; }
+
+.js-show-time {
+  line-height: 1 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookTime span {
+  height: 1.40625rem;
+  font-size: 28px;
+  line-height: 1.40625rem; }
+  [data-dpr="1"] .bookProjectSure .booksure-inner .booksure-detail .bookTime span {
+    font-size: 14px; }
+  [data-dpr="3"] .bookProjectSure .booksure-inner .booksure-detail .bookTime span {
+    font-size: 42px; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookTime span:nth-of-type(1) {
+  float: left;
+  color: #888; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookTime span:nth-of-type(2) {
+  float: right;
+  color: #ee1f1d; }
+
+/* 预约项目 */
+.bookProjectSure .booksure-inner .booksure-detail .bookProject {
+  width: 100%;
+  border-bottom: 2px solid #eaeaea; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookProject span {
+  float: left;
+  height: 1.40625rem;
+  font-size: 28px;
+  line-height: 1.40625rem;
+  color: #888; }
+  [data-dpr="1"] .bookProjectSure .booksure-inner .booksure-detail .bookProject span {
+    font-size: 14px; }
+  [data-dpr="3"] .bookProjectSure .booksure-inner .booksure-detail .bookProject span {
+    font-size: 42px; }
+
+.bookProjectList {
+  width: 100%;
+  border-bottom: 2px solid #eaeaea; }
+
+.bookProjectList ul {
+  padding: 0.28125rem 0; }
+
+.bookProjectList li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%; }
+
+.bookProjectList li span {
+  display: block;
+  height: 0.625rem;
+  line-height: 0.625rem;
+  -webkit-box-pack: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-size: 26px; }
+  [data-dpr="1"] .bookProjectList li span {
+    font-size: 13px; }
+  [data-dpr="3"] .bookProjectList li span {
+    font-size: 39px; }
+
+.bookProjectList li span:nth-of-type(1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 4.84375rem;
+  color: #000; }
+
+.bookProjectList li span:nth-of-type(2) {
+  width: 2.65625rem;
+  text-align: center;
+  color: #888; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookProjectList li span:nth-of-type(3) {
+  width: 1.875rem;
+  text-align: right;
+  color: #000; }
+
+/* 预约项目数目 */
+.bookProjectSure .booksure-inner .booksure-detail .bookProjectNum {
+  width: 100%;
+  border-bottom: 2px solid #eaeaea; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookProjectNum span {
+  height: 1.40625rem;
+  line-height: 1.40625rem; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookProjectNum span:nth-of-type(1) {
+  float: left;
+  color: #888;
+  font-size: 28px; }
+  [data-dpr="1"] .bookProjectSure .booksure-inner .booksure-detail .bookProjectNum span:nth-of-type(1) {
+    font-size: 14px; }
+  [data-dpr="3"] .bookProjectSure .booksure-inner .booksure-detail .bookProjectNum span:nth-of-type(1) {
+    font-size: 42px; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookProjectNum span:nth-of-type(2) {
+  float: right;
+  color: #000;
+  font-size: 30px; }
+  [data-dpr="1"] .bookProjectSure .booksure-inner .booksure-detail .bookProjectNum span:nth-of-type(2) {
+    font-size: 15px; }
+  [data-dpr="3"] .bookProjectSure .booksure-inner .booksure-detail .bookProjectNum span:nth-of-type(2) {
+    font-size: 45px; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookTimeLong {
+  width: 100%;
+  border-bottom: 2px solid #eaeaea; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookTimeLong span {
+  height: 1.40625rem;
+  line-height: 1.40625rem; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookTimeLong span:nth-of-type(1) {
+  float: left;
+  color: #888;
+  font-size: 28px; }
+  [data-dpr="1"] .bookProjectSure .booksure-inner .booksure-detail .bookTimeLong span:nth-of-type(1) {
+    font-size: 14px; }
+  [data-dpr="3"] .bookProjectSure .booksure-inner .booksure-detail .bookTimeLong span:nth-of-type(1) {
+    font-size: 42px; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookTimeLong span:nth-of-type(2) {
+  float: right;
+  color: #000;
+  font-size: 30px; }
+  [data-dpr="1"] .bookProjectSure .booksure-inner .booksure-detail .bookTimeLong span:nth-of-type(2) {
+    font-size: 15px; }
+  [data-dpr="3"] .bookProjectSure .booksure-inner .booksure-detail .bookTimeLong span:nth-of-type(2) {
+    font-size: 45px; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookPrice {
+  width: 100%; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookPrice span {
+  height: 1.71875rem;
+  line-height: 1.71875rem;
+  font-size: 32px; }
+  [data-dpr="1"] .bookProjectSure .booksure-inner .booksure-detail .bookPrice span {
+    font-size: 16px; }
+  [data-dpr="3"] .bookProjectSure .booksure-inner .booksure-detail .bookPrice span {
+    font-size: 48px; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookPrice span:nth-of-type(1) {
+  float: right;
+  color: #ee1f1d; }
+
+.bookProjectSure .booksure-inner .booksure-detail .bookPrice span:nth-of-type(2) {
+  float: right;
+  color: #000; }
+
+/* 留言 */
+.bookProjectSure .booksure-inner .booksure-leave-out {
+  margin-top: 0.3125rem;
+  padding: 0 0.3125rem;
+  background-color: #fff; }
+
+.bookProjectSure .booksure-inner .booksure-leave {
+  width: 100%; }
+
+.bookProjectSure .booksure-inner .booksure-leave span {
+  float: left;
+  height: 1.40625rem;
+  line-height: 1.40625rem;
+  color: #000;
+  font-size: 30px; }
+  [data-dpr="1"] .bookProjectSure .booksure-inner .booksure-leave span {
+    font-size: 15px; }
+  [data-dpr="3"] .bookProjectSure .booksure-inner .booksure-leave span {
+    font-size: 45px; }
+
+/* 底部 */
+.bookProjectSure .bookProjectSure-footer {
+  position: fixed;
+  bottom: 0;
+  width: 10rem; }
+
+.bookProjectSure .bookProjectSure-footer .footer-inner .footer-cancel {
+  float: left;
+  background-color: #fff; }
+
+.bookProjectSure .bookProjectSure-footer .footer-inner .footer-cancel span {
+  display: block;
+  width: 3.34375rem;
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 30px;
+  color: #888; }
+  [data-dpr="1"] .bookProjectSure .bookProjectSure-footer .footer-inner .footer-cancel span {
+    font-size: 15px; }
+  [data-dpr="3"] .bookProjectSure .bookProjectSure-footer .footer-inner .footer-cancel span {
+    font-size: 45px; }
+
+.bookProjectSure .bookProjectSure-footer .footer-inner .footer-sure {
+  float: left;
+  /* width: 0.0625rem */
+  background-color: #333; }
+
+.bookProjectSure .bookProjectSure-footer .footer-inner .footer-sure span {
+  display: block;
+  width: 6.65625rem;
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  text-align: center;
+  color: #bda47d;
+  font-size: 30px; }
+  [data-dpr="1"] .bookProjectSure .bookProjectSure-footer .footer-inner .footer-sure span {
+    font-size: 15px; }
+  [data-dpr="3"] .bookProjectSure .bookProjectSure-footer .footer-inner .footer-sure span {
+    font-size: 45px; }
+
+/* .bookProjectSure .bookProjectSure-footer .footer-inner .footer-sure .canClick{
+     background-color: #333;
+     border: 2px solid #333;  
+}
+ */
+
+/*# sourceMappingURL=bookprojectsure.css.map */

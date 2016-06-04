@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/tech.css">
+    <link rel="stylesheet" type="text/css" href="css/serveritem.css">
+    <link rel="stylesheet" type="text/css" href="css/bookprojectsure.css">
+    <link rel="stylesheet" type="text/css" href="css/feel.css">
+    <link rel="stylesheet" type="text/css" href="css/timelen.css">
+    <title>....</title>
+</head>
+<body>
+    <div class="main">
+        <!-- 主页面 -->
+        <div class="main-frame">
+            <header class="main-header">
+                <div class="master-name js-master-name">
+                    <div class="master-name-img">
+                        <span></span>
+                    </div>
+                    <div class="master-name-text">
+                        <span>选择师傅</span>
+                    </div>
+                    <div class="master-name-icon">
+                        <span></span>
+                    </div>
+                    <div class="master-mess">
+                        <div class="master-mess-inner">
+                            <span class="js-master-sle-logo"></span>
+                            <span class="js-master-sle-name"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-startTime js-book-startTime">
+                    <div class="book-startTime-img">
+                        <span></span>
+                    </div>
+                    <div class="book-startTime-text">
+                        <span>选择预约开始时间</span>
+                    </div>
+                    <div class="book-startTime-icon">
+                        <span></span>
+                    </div>
+                    <div class="book-startTime-mess">
+                        <div class="book-mess-inner">
+                            <p class="js-select-ymd"></p>
+                            <p><span class="js-select-hm"></span><span class="js-select-day"></span></p>
+                        </div>  
+                    </div>
+                </div>
+            </header>
+            <section class="main-container">
+                <div class="container-select">
+                    <div class="container-title clearfloat">
+                        <div class="container-title-img">
+                            <span></span>
+                        </div>
+                        <div class="container-title-text">
+                            <span>预约(三选一)</span>
+                        </div>   
+                        <div class="jf-select-item-sum">
+                            
+                        </div>           
+                    </div>
+                    <div class="container-inner js-container-inner">
+                        <div class="container-inner-botton">
+                            <div class="container-service-type jf-have-color">
+                                <span>预约服务项目</span>
+                            </div>
+                            <div class="container-service-time jf-have-color">
+                                <span>预约服务时长</span>
+                            </div>
+                            <div class="container-experience-type">
+                                <span>预约体验项目</span>
+                            </div>                  
+                        </div>
+                    </div>              
+                </div>
+                <div class="leave-message clearfloat">
+                    <div class="leave-message-img">
+                        <span></span>
+                    </div>
+                    <div class="leave-message-text">
+                        <input class="js-leave-message-text" type="text" placeholder="留言选填，15个字以内"/>
+                    </div>
+                </div>
+
+            </section>
+            <footer class="main-footer">
+                <div class="footer-inner clearfloat">
+                    <div class="jf-footer-cancel">
+                        取消
+                    </div>
+                    <div class="jf-footer-next footer-next-noclick">
+                        下一步
+                    </div>
+                </div>
+            </footer>
+            <div class="white-bg js-white-bg">
+                <div class="atte-message js-atte-message">
+                    <div class="atte-message-inner">
+                        <span class="small-tips"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="gray-bg"></div>
+            
+        </div>
+
+        <!-- 选择时间 -->
+        <div class="popuptime js-popuptime">
+            <div class="timebox">
+                <div class="bookingstart">
+                    <div class="bookingcancer js-bookingcancer">
+                        取消
+                    </div>
+                    <div class="bookingselect">
+                        选择预约开始时间
+                    </div>
+                    <div class="bookingcomplete js-bookingcomplete">
+                        完成
+                    </div>
+                </div>
+                <div class="dayitembox">
+                    <div class="dayitemparent clearfix"></div>
+                </div>
+                <div class="timeBorn"></div>
+                <div class="time-load">
+                    <img src="/YyWeixinWeb/images/loading.gif" alt="loading">
+                </div>
+            </div>
+        </div>
+        <!-- 服务项目 -->
+        <div class="selectitem js-selectitem">
+            <header class="project-header">
+                <p class="pj-head-p"></p>
+                <div class="pj-head-time">
+                    <span class="pj-head-left"></span>
+                    <span class="pj-head-center">至</span>
+                    <span class="pj-head-right"></span>
+                </div>
+                <p class="pj-head-tips">温馨提示：本次预约还可以预约<span></span>分钟</p>
+            </header>
+            <article class="pj-menu">
+                <div class="pj-server-item">服务项目</div>
+                <div class="pj-timelen">时长</div>
+                <div class="pj-itemprice">价格</div>
+            </article>
+            <section class="pj-item-detail">
+                <ul>
+                </ul>
+            </section>
+            <footer class="pj-sure-select">
+                <div class="pj-footer-left">
+                    <div class="pj-numprice">¥<span>0</span></div>
+                    <div class="pj-price-msg">
+                        <div class="pj-timelen-num">
+                            总时长：<span>0</span>分钟
+                        </div>
+                        <div class="pj-item-num">
+                            总项目：<span>0</span>个
+                        </div>
+                    </div>
+                </div>
+                <div class="pj-footer-right pj-footer-cancer">
+                    确定选择
+                </div>
+            </footer>
+        </div>
+        <!-- 预约体验项目 -->
+        <div class="bookfeel">
+            <header class="project-header">
+                <p class="pj-head-p"></p>
+                <div class="pj-head-time">
+                    <span class="pj-head-left"></span>
+                    <span class="pj-head-center">至</span>
+                    <span class="pj-head-right"></span>
+                </div>
+                <p class="pj-head-tips">温馨提示：本次预约还可以预约<span></span>分钟</p>
+            </header>
+            <section class="bf-can-used js-ticket-display-user">
+                <div class="bf-used-line"></div>
+                <div class="bf-used-title">可使用</div>
+                <div class="bf-used-line"></div>
+            </section>
+            <article class="bf-ticket js-user-ticket js-ticket-display-user">
+                <ul>
+                </ul>
+            </article>
+            <section class="bf-can-used js-ticket-display-nouser">
+                <div class="bf-used-line"></div>
+                <div class="bf-used-title">不可使用(超出可预约时间)</div>
+                <div class="bf-used-line"></div>
+            </section>
+            <article class="bf-ticket js-nouser-ticket js-ticket-display-nouser">
+                <ul>
+                </ul>
+            </article>
+        </div>
+        <!-- 预约服务时长 -->
+        <div class="bsl-box">
+            <div class="tips-over-time">服务时长超出当前可预约时间</div>
+            <header class="bsl-header"></header>
+            <article class="bsl-article">
+                <div class="bsl-time-part">
+                    <div>
+                        <span class="bsl-time-text bsl-time-text-start"></span><!-- 
+                         --><span class="bsl-time-center">至</span><!-- 
+                         --><span class="bsl-time-text bsl-time-text-last"><div class="bsl-head-arrive-time"></div><div class="bsl-head-end-time"></div></span>
+                    </div>
+                </div>
+                <p class="bsl-tips">温馨提示：本次预约还可以预约<span></span>分钟</p>
+                <div class="bsl-control-time">
+                    <div class="bsl-reduce bsl-reduce-click">
+                    </div>
+                    <div class="bsl-time-detail"></div>
+                    <div class="bsl-plus bsl-plus-click">
+                    </div>
+                </div>
+            </article>
+            <footer class="bsl-footer">
+                <div class="bsl-foot-left">
+                    总时长：<span></span>分钟
+                </div>
+                <div class="bsl-foot-right">
+                    确定选择
+                </div>
+            </footer>
+        </div>
+        <!-- 确定选择 -->
+        <div class="bookProjectSure">
+            <section class="booksure-inner">
+              <div class="booksure-detail-out">
+                <div class="booksure-detail">
+                    <div class="bookTime js-bookTime clearfloat">
+                        <span>预约时间</span><span class="js-show-time"></span>
+                    </div>
+                    <div class="bookProject clearfloat">
+                        <span>预约项目</span>
+                    </div>
+                    <div class="bookProjectList">
+                        <ul></ul>
+                    </div>
+                    <div class="bookProjectNum clearfloat">
+                        <span>总项目</span>
+                        <span class="js-bookProjectNum"></span>
+                    </div>
+                    <div class="bookTimeLong js-book-time-long clearfloat">
+                        <span>总时长</span>
+                        <span class="js-bookTimeLong"></span>
+                    </div>
+                    <div class="bookPrice clearfloat">
+                        <span class="js-bookPrice"></span>
+                        <span>订单金额：</span>
+                    </div>
+                </div>
+              </div>
+              <div class="booksure-leave-out">
+                <div class="booksure-leave clearfloat">
+                    <span>留言：</span>
+                    <span class="js-booksure-leave"></span>
+                </div>
+              </div>
+            </section>
+            <footer class="bookProjectSure-footer">
+                <div class="footer-inner clearfloat">
+                    <div class="footer-cancel">
+                        <span class="js-book-footer-cancel">取消</span>
+                    </div>
+                    <div class="footer-sure js-footer-sure">
+                        <span>确定预约</span>
+                    </div>
+                </div>              
+            </footer>
+        </div>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script defer type="text/javascript" src="js/timecom.js"></script>
+    <script defer type="text/javascript" src="js/tech.js"></script>
+</body>
+</html>
